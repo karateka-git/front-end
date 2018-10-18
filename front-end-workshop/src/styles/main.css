@@ -1,0 +1,45 @@
+body {
+    margin :0;
+}
+
+.header, .main {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 120px 0 100px 0;
+    border-bottom: 1px solid #dfe0e0;
+}
+
+.header__title{
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.header__subtitle{
+    font-family: Arial;
+    font-size: 27px;
+    font-weight: normal;
+    color: #1a1a1a;
+    margin: 15px 0 0 0;
+}
+
+.contacts {
+    margin: 0;
+    list-style: none;
+}
+
+.header__contacts {
+    margin-top: 30px;
+}
+
+.footer{
+    height: 45px;
+    background-color: #f2d629;
+
+}
