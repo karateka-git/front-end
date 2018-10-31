@@ -1,9 +1,103 @@
 body {
     background-color : #FFFFFF;
+    margin: 0;
 }
-hr {
-    border: none; /* Убираем границу для браузера Firefox */
-    color: red; /* Цвет линии для остальных браузеров */
-    background-color: red; /* Цвет линии для браузера Firefox и Opera */
-    height: 2px; /* Толщина линии */
-   }
+
+.post {
+    width: 360px;
+    height: 556px;
+    box-shadow:0 0 20px rgba(0,0,0,0.5); 
+    background-image: url(../images/postImg.png);
+    background-size: auto 246px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+}
+
+.post_head__background_icon {
+    background-color: #262626;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: 229px;
+    left: 160px;
+    margin-right: 0;
+}
+
+.post_head__icon {
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+
+.post_main *{
+    margin: 0;
+    text-align: center;
+}
+
+.post_main {
+    position: relative;
+    top: 310px;
+}
+
+.post_main__category, .post_main__date, .button__link, .post_footer__comment_link{
+    font-family: Hind;
+    color: #818181;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: lighter;
+    height: auto;
+}
+.post_main__category {
+    margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat.ttf"); /* адрес файла со шрифтом */
+}
+
+.post_main__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #212121;
+    margin-bottom: 9px;
+}
+
+.post_main__date {
+    margin-bottom: 34px;
+}
+
+.button__line {
+    width: 30px; 
+    margin-left: 165px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: none; 
+    background-color: #d6d6d6; 
+    height: 1px; /* Толщина линии */
+}
+
+.button__link, .post_footer__comment_link{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.post_footer {
+    position: absolute;
+    bottom: 18px;
+    left: 27px;
+}
+
+.comment_img {
+    width: 15px;
+    height: 14px;
+    position: relative;
+    bottom: -2px;
+    margin-right: 7px;
+}
