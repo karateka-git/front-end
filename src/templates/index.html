@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7bits base_practice</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+<body>
+    <form class="registration-form registration-form_shadow">
+        <header class="registration-form__header">
+            <h1 class="registration-form__title text_purple">Давайте начнём!</h1>
+        </header>
+        <main class="registration-form__main">
+            <div class="element registration-form__first-name">
+                <label for="registration-form__first-name" class="registration-form__label text_purple">Имя</label>
+                <input tabindex="1" id="registration-form__first-name" class="registration-form__input" type="text" placeholder="Иван">
+            </div>
+            <div class="element registration-form__second-name">
+                <label for="registration-form__second-name" class="registration-form__label text_purple">Фамилия</label>
+                <input tabindex="2" id="registration-form__second-name"class="registration-form__input" type="text" placeholder="Иванов">
+            </div>
+            <div class="element registration-form__human-sex">
+                <label class="registration-form__label text_purple">Ваш пол</label>
+                <input tabindex="3" type="radio" name="human-sex" id="human-sex__girl" class="registration-form__radio">
+                <label for="human-sex__girl">Женский</label>
+                
+                <input tabindex="4" type="radio" name="human-sex" id="human-sex__man" class="registration-form__radio">
+                <label for="human-sex__man">Мужской</label>
+            </div>
+            <div class="element registration-form__email">
+                <label for="registration-form__email" class="registration-form__label text_purple">Введите электронный адрес</label>
+                <input tabindex="5" id="registration-form__email"class="registration-form__input" type="email" placeholder="email@gmail.com">
+            </div>
+            <div class="element registration-form__password">
+                <label for="registration-form__password" class="registration-form__label text_purple">Придумайте пароль</label>
+                <input tabindex="6" id="registration-form__password"class="registration-form__input password" type="password" minlength="4"
+                maxlength="8" placeholder="password">
+            </div>
+        </main>
+        <footer class="registration-form__footer">
+            <div class="registration-form__agreement">
+                <input tabindex="7" type="checkbox" id="agreement" class="registration-form__radio registration-form__input-agreement">
+                <label for="agreement" class="registration-form__label registration-form__label-agreement">Я принимаю условия <a href="www.w.ru" class="link">Пользовательского соглашения</a> 
+                    и даю своё согласие на обработку моих персональных данных 
+                    на условиях, определенных <a href="www.w.ru" class="link">Политикой конфиденциальности</a>.</label>
+            </div>
+            <input tabindex="8" class="registration-form__submit" type="submit" value="Зарегистрироваться">
+        </footer>
+    </form>
+</body>
+</html>
