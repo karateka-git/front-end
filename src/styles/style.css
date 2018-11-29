@@ -1,174 +1,158 @@
 body {
     margin: 0;
-    background-color: #f7f9fc;
-    color: #282828;
-    height: 1000px;
-}
-
-.text_purple {
-    color: #262e73;
-}
-
-:focus {
-    outline: 0;
-}
-
-.registration-form {
-    position: relative;
-    margin: auto; 
-    top: 10px;
-    width: 425px;
-    height: 770px;
-    background-color: #f7f9fc;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
-.registration-form_shadow {
-    box-shadow: 0 0 30px rgb(0,0,0,0.5);;
-}
-
-.registration-form__header {
-    padding-top: 65px;
-    padding-bottom: 30px;
-}
-
-.registration-form__title {
+.header {
     margin: 0;
-    font-size: 33px;
-    font-family: "PT Sans", sans-serif;
+    height: 100%;
+}
+
+.page__header {
+    padding-top: 170px;
+    width: 80%;
+    margin: auto;
+}
+
+.header__title {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: 6px;
+    color: #000000;
+}
+
+.header__text {
+    margin: 0;
+    margin-bottom: 150px;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    color: #798285;
+    font-family: "Open Sans";
+}
+
+.main {
+    margin: 0;
+    
+    height: 100%;
+}
+
+.page__main {
+    margin: auto;
+    text-align: left;
+    width: 80%;
+}
+
+.main__item {
+    margin-bottom: 110px;
+    width: 100%;
+    height: 100%;
+}
+
+.item__disk-title {
+    padding-top: 20px;
+    vertical-align: top;
+    width: 40%;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+.disk-title__date {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 1.4em;
+    color: #595959;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+}
+
+.disk-title__name {
+    margin: 0;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #000000;
     font-weight: bold;
 }
 
-.registration-form__main, .registration-form__footer{
-    width: calc(100% - 55px);
-    margin-left: 20px;
-    text-align: left;
+.item__disk-information {
+    width: 57%; 
+    display: inline-block;
 }
 
-.element {
-    margin-bottom: 18px;
-}
-
-.registration-form__label {
-    font-size: 14px;
-    font-family: "PT Sans", sans-serif;
-    display: block;
-    margin-bottom: 8px;
-}
-.registration-form__input {
-    display: block;
-    padding-left: 15px;
-    width: calc(100% - 17px);
-    height: 43px;
-    border-color: #a9b0bb;
-    border-Style: solid;
-    border-width: 1px;
-    font-size: 17px;
-    font-family: "PT Sans", sans-serif;
-    caret-color: #a9b0bb;
-    color: #282828;
-}
-
-.registration-form__input::placeholder {
-    color: #c1c9d5;
-    text-indent: 0px;   
-    transition: text-indent 0.3s ease;
-}
-
-.registration-form__input:focus::placeholder {
-    text-indent: 500px; 
-    transition: text-indent 0.3s ease;
-}
-
-.registration-form__human-sex input {
+.disk-information__name {
     margin: 0;
-    background: rgba(0, 0, 0, 0)
+    margin-bottom: 10px;
+    font-size: 2.3em;
+    color: #000000;
+    font-weight: normal;
 }
 
-.registration-form__radio {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.registration-form__radio + label {
-    cursor: pointer;
-}
-
-.registration-form__radio + label {
-    position: relative;
-    padding: 0 0 0 20px;
-    cursor: pointer;
-}
-.registration-form__radio + label:before {
-    content: '';
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    border: 1px solid #747a83;
-    border-radius: 50%;
-    background: #FFF;
-}
-.registration-form__radio + label:after {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 3px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #262e73;
-    box-shadow: inset 0 1px 1px #262e73;
-    opacity: 0;
-    transition: .2s;
-}
-.registration-form__radio:checked + label:after {
-    opacity: 1;
-}
-
-.password {
-    color: #262e73;
-}
-
-.registration-form__agreement {
-    margin-bottom: 20px;
-}
-
-.registration-form__label-agreement {
-    font-size: 12px;
-    font-family: "PT Sans", sans-serif;
+.disk-information__text {
     margin: 0;
+    margin-bottom: 25px;
+    font-size: 1.4em;
+    color: #acacac;
+    line-height: 24px;
 }
 
-.registration-form__input-agreement + label {
-    padding: 0 0 0 30px;
-}
-
-.registration-form__input-agreement + label:before {
-    top: calc(50% - 6px);
-    border-radius: 0%;
-}
-.registration-form__input-agreement + label:after {
-    top: calc(50% - 3px);
-    border-radius: 0%;
-}
-
-.link {
-    text-decoration: none;
-    color: #262e73;
-}
-
-.registration-form__submit {
-    font-size: 17px;
-    color: #f7f9fc;
-    font-family: "PT Sans", sans-serif;
-    background-color: #0bc691;
-    border: 0;
-    border-radius: 2px; 
-    height: 43px;
-    width: 100%;
+.item__button {
     cursor: pointer;
+    padding: 2% 11%;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #ffffff;
+    font-weight: bold; 
+    background-color: #000000;
+    border: 1px solid #000000;
 }
 
+.page__footer {
+    height: 787px;
+    margin: -450px 10px 15px 10px;
+    background: url("../images/page_background.jpg") bottom no-repeat;
+     
+}
+
+@media screen and (max-width: 750px) {
+    .page__content {
+        padding: 170px 5% 0 5%;
+        width: 90%;
+    }
+    
+    .page__header {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .item__disk-title {
+        padding-top: 0;
+        display: inline;
+    }
+
+    .disk-title__name {
+        margin-bottom: 45px;
+    }
+    
+    .item__disk-information {
+        display: inline;
+    }
+
+    
+    .disk-information__button {
+        padding: 3% 12%;
+        margin-top: 20px;
+        margin-left: calc(50% - 12%);
+    }
+    
+    .page__footer {
+        margin: -450px 15px 20px 15px;
+        background-position-x: -600px;
+        background-size: unset;
+    }
+}
