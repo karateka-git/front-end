@@ -1,0 +1,23 @@
+{
+  "name": "practice",
+  "version": "8.9.1",
+  "description": "completing practice",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soberLord/front-end.git"
+  },
+  "author": "mrvladislav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soberLord/front-end/issues"
+  },
+  "homepage": "https://github.com/soberLord/front-end#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
