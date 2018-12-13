@@ -54,7 +54,7 @@ gulp.task ('prod', ['html', 'css', 'images']);
 gulp.task('watch', function() {
     gulp.watch(path.html.pages, ['html']);
     gulp.watch(path.html.components,['html']);
-    gulp.watch(path.html.css, ['css']);
+    gulp.watch(path.css, ['css']);
     gulp.watch(path.html.images, ['images']);
 });
 
