@@ -1,0 +1,26 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "VS code 1.28 browser google",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soberLord/front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soberLord/front-end/issues"
+  },
+  "homepage": "https://github.com/soberLord/front-end#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0"
+  }
+}
