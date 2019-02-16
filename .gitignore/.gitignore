@@ -10,6 +10,7 @@ package-lock.json
 # System folders
 ###################
 .DS_Store
+.idea
 
 # Node & Bower & JSPM
 ###################
