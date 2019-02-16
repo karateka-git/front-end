@@ -5,14 +5,16 @@ dist
 packages
 typings
 .tmp
+package-lock.json
 
 # System folders
 ###################
 .DS_Store
+/.idea
 
 # Node & Bower & JSPM
 ###################
-node_modules
+/node_modules
 bower_components
 jspm_packages
 
