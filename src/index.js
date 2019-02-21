@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
   content.append(spinnerTemplate);
   Promise.all(massivePromise)
       .then( (response) => {
+        $('.spinner').remove();
         response.forEach((item) => {
           if(item) {
             item.data.forEach((element) => {
@@ -37,28 +38,5 @@ document.addEventListener("DOMContentLoaded", function() {
           }
         })
       })
-    $('.spinner').remove();
   });
-  // massivePromise.forEach((item) => {
-  //   item.data.forEach(item => {
-  //     content.append(articleTemplate(item));
-  //   })
-  // })
 
-  // content.append(spinnerTemplate);
-  // urls.forEach((item) => {
-  //   fetch('api/' + item)
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((result) => {
-  //       result.data.forEach(item =>{
-  //         $('.spinner').remove();
-  //         content.append(articleTemplate(item));
-  //       })
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     })
-  // })
-// });
