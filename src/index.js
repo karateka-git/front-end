@@ -15,8 +15,50 @@ document.addEventListener("DOMContentLoaded", function() {
   const root = $('#root');
   root.append(indexTemplate());
   const content = $('.content');
+  let massivePromise = [];
 
-  /**
-   * Place your code here
-   */
-});
+  urls.forEach((item) => {
+    massivePromise.push(fetch('api/' + item)
+        .then((response) => {
+          return response.json();
+        })
+        .catch((error) => {
+          console.log(error.message);
+        }))
+  });
+  content.append(spinnerTemplate);
+  Promise.all(massivePromise)
+      .then( (response) => {
+        response.forEach((item) => {
+          if(item) {
+            item.data.forEach((element) => {
+              content.append(articleTemplate(element));
+          })
+          }
+        })
+      })
+    $('.spinner').remove();
+  });
+  // massivePromise.forEach((item) => {
+  //   item.data.forEach(item => {
+  //     content.append(articleTemplate(item));
+  //   })
+  // })
+
+  // content.append(spinnerTemplate);
+  // urls.forEach((item) => {
+  //   fetch('api/' + item)
+  //     .then((response) => {
+  //       return response.json();
+  //     })
+  //     .then((result) => {
+  //       result.data.forEach(item =>{
+  //         $('.spinner').remove();
+  //         content.append(articleTemplate(item));
+  //       })
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     })
+  // })
+// });
